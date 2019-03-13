@@ -5,8 +5,9 @@ account: agasthyaps
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 753965
-bundleId: 1909504
+bundleId: 1918006
 url: https://agasthyaps.shinyapps.io/rdd-binning/
-when: 1551460794.28377
+when: 1551818836.67578
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .gitattributes
