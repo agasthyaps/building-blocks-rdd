@@ -5,8 +5,8 @@ account: agasthyaps
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 787696
-bundleId: 1937327
+bundleId: 1942915
 url: https://agasthyaps.shinyapps.io/rdd-types-of-reg/
-when: 1552503954.41295
+when: 1552670695.19299
 asMultiple: FALSE
 asStatic: FALSE

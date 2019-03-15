@@ -1,4 +1,4 @@
-
+#BINNING
   fluidPage(
     titlePanel("Bandwidth and Effect Size"),
     sidebarLayout(

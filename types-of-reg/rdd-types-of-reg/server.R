@@ -32,9 +32,9 @@ shinyServer(function(input, output) {
   
   # store effects
   two_dig <- function(x) format(round(x,2),nsmall = 2)
-  est_effs <- list(avg = two_dig(avg_hi-avg_low),
-                   lin = two_dig(lin_hi-lin_low),
-                   poly = two_dig(poly_hi-poly_low),
+  est_effs <- list(avg = two_dig(6.137836),
+                   lin = two_dig(5.910245),
+                   poly = two_dig(6.482564),
                    reg = " ")
   
   # plots
@@ -109,4 +109,13 @@ shinyServer(function(input, output) {
   output$esteffect <- renderText({
     paste("<h3>Estimated effect:",est_effs[input$type],"<h3>")
   })
+  
+  output$gif <- renderImage({
+    list(src =paste("gifs/",input$type,".gif",sep=""),
+         contentType = 'image/gif'
+         ,width = 720
+         ,height = 480
+         # alt = "This is alternate text"
+    )
+  },deleteFile = FALSE)
 })
