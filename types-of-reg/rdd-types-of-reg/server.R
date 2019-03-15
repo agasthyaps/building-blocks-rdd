@@ -111,7 +111,7 @@ shinyServer(function(input, output) {
   })
   
   output$gif <- renderImage({
-    list(src =paste("gifs/",input$type,".gif",sep=""),
+    list(src =ifelse(input$type == "reg","gifs/reg.png",paste("gifs/",input$type,".gif",sep="")),
          contentType = 'image/gif'
          ,width = 720
          ,height = 480
